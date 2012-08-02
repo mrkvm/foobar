@@ -122,7 +122,7 @@ class Hipster
       elsif !@fave_requested
         # Send a request to the DJ.
         @fave_requested = true
-        deejay.request(@fave_song)
+        deejay.request!(@fave_song)
         print "#{@name} requested their favorite song\n"
       end
     end  

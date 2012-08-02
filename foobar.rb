@@ -157,11 +157,11 @@ foobar = FooBar.new
 foobar.open!
 
 # Some hipsters show up at the bar
-foobar.pay_cover(Hipster.new("Mark", Song.new("New Order", "Ceremony")))
-foobar.pay_cover(Hipster.new("Denise", Song.new("Purity Ring", "Belispeak")))
-foobar.pay_cover(Hipster.new("Mia", Song.new("fun.", "We Are Young")))
-foobar.pay_cover(Hipster.new("Naomi", Song.new("Cocteau Twins", "The Spangle Maker")))
-foobar.pay_cover(Hipster.new("Hollis", Song.new("Walkmen", "We Can't Be Beat")))
+foobar.pay_cover!(Hipster.new("Mark", Song.new("New Order", "Ceremony")))
+foobar.pay_cover!(Hipster.new("Denise", Song.new("Purity Ring", "Belispeak")))
+foobar.pay_cover!(Hipster.new("Mia", Song.new("fun.", "We Are Young")))
+foobar.pay_cover!(Hipster.new("Naomi", Song.new("Cocteau Twins", "The Spangle Maker")))
+foobar.pay_cover!(Hipster.new("Hollis", Song.new("The Walkmen", "We Can't Be Beat")))
 
 # Sleep the main thread
 sleep

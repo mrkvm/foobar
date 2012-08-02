@@ -105,9 +105,7 @@ class Hipster
     elsif rand(100) < 20
       # If it's not our favorite song, there's 20% chance we might
       # lower ourselves to dancing anyway.
-      if rand(100) < 20
-        @dancing = true
-      end
+      @dancing = true
     end
  
     # Check to see if our state changed.

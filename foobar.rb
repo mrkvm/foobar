@@ -53,7 +53,7 @@ class DeeJay
     loop do
       print "===== #{@name} on the 1s and the 2s... (request count: #{@requests.count}) =====\n"
 
-      # DJs only play requests 70% of the time, elistist jerks.
+      # DJs only play requests 70% of the time, elitist jerks.
       if @requests.count > 0 && rand(100) < 70
         song = @requests.shift
       else

@@ -103,7 +103,7 @@ class Hipster
       @fave_requested = false
     elsif rand(100) < 20
       # If it's not our favorite song, there's 20% chance we might
-      # lower ourselves to dancing anyway.
+      # lower ourselves to dance anyway.
       @dancing = true
     end
  

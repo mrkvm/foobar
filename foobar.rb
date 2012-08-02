@@ -17,7 +17,7 @@ class FooBar
   def play(song)
     # There's a new song now playing in the bar.
     @now_playing = song
-    song.play
+    @now_playing.play
 
     # Notify all the hipsters of the new song.
     # Note: this is an asynchronous call, and the lazy hipsters might

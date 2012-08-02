@@ -71,7 +71,6 @@ class DeeJay
 
   def request(song)
     @requests << song
-    true
   end
 end
 
@@ -119,9 +118,11 @@ class Hipster
     if !@dancing
       if rand(100) < 5
         # Hipsters sure do love their PBR, despite its awfulness
-        print "#{@name} chugs a PBR\n"
+        print "#{@name} chugged a PBR\n"
       elsif !@fave_requested
-        @fave_requested = deejay.request(@fave_song)
+        # Send a request to the DJ.
+        @fave_requested = true
+        deejay.request(@fave_song)
         print "#{@name} requested their favorite song\n"
       end
     end  

@@ -51,7 +51,7 @@ class DeeJay
 
   def spin
     loop do
-      print "===== #{@name} on the 1's and the 2's... (request count: #{@requests.count}) =====\n"
+      print "===== #{@name} on the 1s and the 2s... (request count: #{@requests.count}) =====\n"
 
       # DJs only play requests only 70% of the time, elistist jerks.
       if @requests.count > 0 && rand(100) < 70
@@ -65,7 +65,7 @@ class DeeJay
       @bar.play(song)
 
       # Let the song play
-      sleep(rand(10))
+      sleep rand(10)
     end
   end
 
@@ -153,14 +153,15 @@ end
 
 foobar = FooBar.new
 
-# open the bar
+# Open the bar
 foobar.open!
 
+# Some hipsters show up at the bar
 foobar.pay_cover(Hipster.new("Mark", Song.new("New Order", "Ceremony")))
 foobar.pay_cover(Hipster.new("Denise", Song.new("Purity Ring", "Belispeak")))
 foobar.pay_cover(Hipster.new("Mia", Song.new("fun.", "We Are Young")))
 foobar.pay_cover(Hipster.new("Naomi", Song.new("Cocteau Twins", "The Spangle Maker")))
 foobar.pay_cover(Hipster.new("Hollis", Song.new("Walkmen", "We Can't Be Beat")))
 
-# sleep the main thread
+# Sleep the main thread
 sleep
